@@ -1,6 +1,7 @@
 :root {
     --blue1: #31CCB0;
     --white: #FCFCFC;
+    --dark-blue: #0D1B2A;
   }
 @font-face {
     font-family: pasejero;
@@ -9,6 +10,8 @@
 html,body{
     margin: 0px;
     padding:0px;
+    font-family: 'M PLUS 1p', sans-serif;
+    overflow-x: hidden;
 }
 .checkBtn {
     display: none;
@@ -51,11 +54,13 @@ a:hover{
 }
 
 @media only screen and (max-width:805px) {
+
     .list{
         display: flex;
         flex-direction: column;
-        position: absolute;
-        background-color: #0D1B2A;
+        position:absolute;
+        overflow: none;
+        background-color: var(--dark-blue);
         height:100vh;
         width:100%;
         font-size: 6vw;
@@ -112,6 +117,7 @@ a:hover{
     font-size: 15px;
     font-weight: 900;
     letter-spacing: 4px;
+    padding-bottom: 20px;
 }
 #grow, #great{
     font-size:16vmin;
@@ -144,5 +150,194 @@ a:hover{
         padding:10px;
         font-size:12px;
         
+    }
+}
+.intro{
+    width:80%;
+    margin:20vh auto 0px auto;
+}
+.intro p{
+    font-size: 12px;
+    color: var(--blue1);
+    font-weight: 800;
+    letter-spacing: 6px;
+    margin-bottom:0px;
+}
+.intro h3{
+    margin-top: 5px;
+    margin-bottom:0px;
+    font-size:4.5vmax;
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+.intro h5{
+    margin-top:16px;
+    font-size: 2vmax;
+    font-style: italic;
+    font-weight: 500;
+}
+.intro-wrapper{
+    display: flex;
+    gap:40px;
+    transition: all .5s;
+}
+.intro-wrapper .marketing{
+    font-size: 27px;
+    color: var(--dark-blue);
+    font-weight: 700;
+    padding:10px 0px;
+}
+.intro-wrapper .para{
+    font-size: 12px;
+    color:#424a52
+}
+@media only screen and (max-width:850px)
+{
+    .intro-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap:25px;
+    }
+    .intro-wrapper .marketing{
+        padding:10px 0px;
+    }
+}
+.inner-section1{
+    font-family: 'M PLUS 1p', sans-serif;
+    width:80%;
+    margin:20vh auto 0px auto;
+}
+.inner-section1 p{
+    font-size: 12px;
+    color: var(--blue1);
+    font-weight: 800;
+    letter-spacing: 6px;
+    margin-bottom:0px;
+}
+.inner-section1 h5{
+    margin-top:16px;
+    font-size: 37px;
+    font-weight: 500;
+}
+.bigsection{
+    display: flex;
+}
+.bigsection h5{
+    font-size: 30px;
+    margin:0px;
+}
+.bigsection p{
+    font-size: 16px;
+}
+.big-inner{
+    width:80%;
+    color: var(--white);
+}
+.content1{
+    display: flex;
+    gap:60px;
+    justify-content: center;
+    align-items: center;
+    padding:3em;
+}
+#c2:hover{
+    opacity: .7;
+}
+#c1:hover{
+    opacity: .7;
+}
+#c3:hover{
+    opacity: .7;
+}
+#c1{
+    background-color: #2f5a88;
+    transition: all  .5s;
+}
+#c2{
+    background-color: #162e47;
+    transition: all  .5s;
+}
+#c3{
+    background-color: #0D1B2A;
+    transition: all  .5s;
+}
+.bigsection img{
+    width:20%;
+    height:558px
+}
+    
+@media only screen and (max-width:850px){
+    .content1{
+        flex-direction: column;
+    }
+    .big-inner{
+        width:100%;
+    }
+    .bigsection img{
+        display: none;
+    }
+}
+.clients-sec{
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 10vh;
+    color:var(--blue1);
+    width:80%;
+    margin: 0px auto;
+    text-align: center;
+}
+.clients{
+    color:black;
+    padding-top:20px;
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width:850px){
+    .clients{
+        
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        
+    }
+}
+footer{
+
+    margin-top: 15vh;
+    background-color: var(--blue1);
+    display: flex;
+    justify-content: space-around;
+    padding: 10%;
+
+}
+.footer-tit{
+    padding-bottom: 10px;
+    font-weight: 900;
+    font-size: 12.5px;
+    letter-spacing: 6px;
+}
+.footer-tit:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+.footer-options{
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.footer-follow{
+    display: flex;
+    gap:10px;
+}
+@media only screen and (max-width:850px){
+    footer{
+        margin-top: 15vh;
+        background-color: var(--blue1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 30px;
     }
 }
