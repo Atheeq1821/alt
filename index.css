@@ -42,7 +42,7 @@ a:hover{
     text-shadow: 0px 5px 10px var(--blue1);
 }
 #phone{
-    color: #FCFCFC;
+    color: black;
     font-family: 'M PLUS 1p', sans-serif;
     letter-spacing: 2px;
     font-weight:500;
