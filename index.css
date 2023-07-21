@@ -205,7 +205,7 @@ a:hover{
     gap:20px;
     padding:20px 10px 20px 10px;
     border-left:0px;
-    line-height: 0px;
+    line-height: 15px;
 }
 .about .p{
     padding:2vw;
@@ -213,7 +213,7 @@ a:hover{
 }
 @media only screen and (max-width: 550px){
     .about{
-        width:80%;
+        width: 80%;
         padding:20px 10px 20px 10px;
         font-size: 10px;
         
