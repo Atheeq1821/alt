@@ -13,6 +13,65 @@ html,body{
     font-family: 'M PLUS 1p', sans-serif;
     overflow-x: hidden;
 }
+@keyframes colorChange {
+
+    0% {
+        border-color: var(--blue1);
+        color: var(--blue1);
+    }
+
+    10% {
+        border-color: #7ae582;
+        color: #7ae582;
+
+    }
+
+    20% {
+        border-color: #8ecae6;
+        color: #8ecae6;
+    }
+
+    30% {
+        border-color: #cae9ff;
+        color: #cae9ff;
+    }
+
+    40% {
+        border-color: purple;
+        color: purple;
+    }
+
+    50% {
+        border-color: #003049;
+        color: #003049;
+
+    }
+
+    60% {
+        border-color: #ada7ff;
+        color: #ada7ff;
+    }
+
+    70% {
+        border-color:#6930c3;
+        color: #6930c3;
+    }
+
+    80% {
+        border-color: pink;
+        color: pink;
+    }
+
+    90% {
+        border-color: red;
+        color: red;
+    }
+
+    100% {
+        border-color: #1a759f;
+        color: #1a759f;
+    }
+}
 .checkBtn {
     display: none;
 }
@@ -140,15 +199,23 @@ a:hover{
     font-size: 18px;
     width: 60%;
     align-items: center;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
     gap:20px;
     padding:20px 10px 20px 10px;
     border-left:0px;
+    line-height: 0px;
+}
+.about .p{
+    padding:2vw;
+    font-size: 4vmax;
 }
 @media only screen and (max-width: 550px){
     .about{
         width:80%;
-        padding:10px;
-        font-size:12px;
+        padding:20px 10px 20px 10px;
+        font-size: 10px;
         
     }
 }
