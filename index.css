@@ -1,0 +1,147 @@
+:root {
+    --blue1: #31CCB0;
+    --white: #FCFCFC;
+  }
+@font-face {
+    font-family: pasejero;
+    src: url("fonts/Pasajero.otf");
+}
+html,body{
+    margin: 0px;
+    padding:0px;
+}
+.checkBtn {
+    display: none;
+}
+
+#check {
+    display: none;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    
+}
+ul{
+    display: flex;
+    color: #FCFCFC;
+    list-style: none;
+}
+a{
+    padding-right: 50px;
+    text-decoration: none;
+    color: #fcfcfc9f;
+    font-family: 'M PLUS 1p', sans-serif;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight:500;
+    transition: all 0.5s;
+}
+a:hover{
+    color: var(--white);
+    text-shadow: 0px 5px 10px var(--blue1);
+}
+#phone{
+    color: #FCFCFC;
+    font-family: 'M PLUS 1p', sans-serif;
+    letter-spacing: 2px;
+    font-weight:500;
+    padding-left:30px;
+    padding-right: 100px;
+}
+
+@media only screen and (max-width:805px) {
+    .list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #0D1B2A;
+        height:100vh;
+        width:100%;
+        font-size: 6vw;
+        left :100%;
+
+        justify-content: flex-start;
+        padding-top:120px;
+        gap:20px;
+        transition: all 0.5s;
+}
+.list #phone{
+    padding-top: 50px;
+}
+.list a{
+    font-size: 6vw;
+    
+}
+#check {
+    display: none;
+}
+
+.checkBtn {
+    display: block;
+  
+    font-size: 8vh;
+    color:var(--white)
+}
+
+#check:checked~ul {
+    left: 0%;
+}
+}
+
+
+
+.container{
+    background-image: url("images/Photo\ \(3\).png");
+    background-size: cover;
+    background-position: center;
+   padding-bottom: 30px;
+   padding-top:30px;
+    width:100%;
+}
+.wrapper{
+    font-family: 'M PLUS 1p', sans-serif;
+    color:var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 22vh 20vw 0px 12vw;
+}
+#what{
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+#grow, #great{
+    font-size:16vmin;
+}
+#grow{
+    font-family: pasejero;
+    letter-spacing: 4px;
+}
+#great{
+    font-weight: 800;
+    color: var(--blue1);
+}
+.about{
+    margin: 40px 0px 120px 0px;
+    display:flex;
+    justify-content: center;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: var(--white);
+    border:1px solid #fcfcfc5e;
+    font-size: 18px;
+    width: 60%;
+    align-items: center;
+    gap:20px;
+    padding:20px 10px 20px 10px;
+    border-left:0px;
+}
+@media only screen and (max-width: 550px){
+    .about{
+        width:80%;
+        padding:10px;
+        font-size:12px;
+        
+    }
+}
