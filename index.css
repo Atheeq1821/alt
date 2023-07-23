@@ -7,6 +7,10 @@
     font-family: pasejero;
     src: url("fonts/Pasajero.otf");
 }
+@font-face {
+    font-family: azonix;
+    src: url("fonts/azonix.ttf");
+}
 html,body{
     margin: 0px;
     padding:0px;
@@ -85,6 +89,14 @@ nav{
     justify-content: space-around;
     
 }
+nav .logo{
+    font-size: 30px;
+    font-family: azonix;
+    line-height: 70px;
+    font-weight: 500;
+    color: var(--white);
+    letter-spacing: 5px;
+}
 ul{
     display: flex;
     color: #FCFCFC;
@@ -92,6 +104,7 @@ ul{
 }
 a{
     padding-right: 50px;
+    padding-left: 10px;
     text-decoration: none;
     color: #fcfcfc9f;
     font-family: 'M PLUS 1p', sans-serif;
@@ -120,7 +133,7 @@ a:hover{
         flex-direction: column;
         position:absolute;
         overflow: none;
-        background-color: var(--dark-blue);
+        background-color: var(--blue1);
         height:100vh;
         width:100%;
         font-size: 6vw;
@@ -132,10 +145,19 @@ a:hover{
         transition: all 0.5s;
 }
 .list #phone{
+    width: max-content;
     padding-top: 50px;
+    color: var(--dark-blue);
+}
+.list a:hover{
+    border:1px solid black;
+    border-radius: 4px;
+    transition-duration: 1s;
 }
 .list a{
+    width: max-content;
     font-size: 6vw;
+    color: var(--dark-blue);
     
 }
 #check {
@@ -214,7 +236,7 @@ a:hover{
     transition-duration: 1s;
 }
 #about .p{
-    position: relative;
+
    cursor: pointer;
     padding:2vw;
     font-size: 4vmax;
