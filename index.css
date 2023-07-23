@@ -219,12 +219,20 @@ a:hover{
     padding:2vw;
     font-size: 4vmax;
 }
+
 @media only screen and (max-width: 900px)
 {
-    #grow, #great{
+    #what{
+        font-size: 3vmin;
+    }
+    #grow{
         font-size: 9vmin;
     }
+    #great{
+        font-size: 8vmin;
+    }
 }
+
 @media only screen and (max-width: 550px){
     #about{
         padding:10px 0px 10px 10px;
