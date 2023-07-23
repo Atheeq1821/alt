@@ -13,7 +13,7 @@
 <body>
     <div class="container">
             <nav>
-                <div class="logo">ALt</div>
+                <div class="logo">ALT</div>
                 <div class="right">
                     <input type="checkbox" id="check">
                     <label for="check" class="checkBtn">
@@ -32,7 +32,7 @@
             <div class="wrapper">
                 <div id="what">Why Us?</div>
                 <div id="grow">WE BUILD</div>
-                <div id="great">great <span class="type"></span></div>
+                <div id="great">Great <span class="type"></span></div>
             </div>
             <div id="about">
                 <div id="about-content">To know more about us? Explore our quality works!
@@ -151,12 +151,19 @@
 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 <script src="index.js"></script>
 <script>
+    let check = document.getElementById("check")
+    if(check.checked==true){
+    
+}
+    if(check.checked==false){
     let typed = new Typed('.type', {
-      strings: ['business','design','network'],
+      strings: ['Business','Design','Network'],
       typeSpeed: 150,
       backSpeed: 10,
       loop:true
     });
+}
+
 
 </script>
 </html>
